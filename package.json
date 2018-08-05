@@ -1,0 +1,27 @@
+{
+    "name": "booktracker",
+    "version": "0.1.0",
+    "description": "a booktracker gui app to manage books read by a author. uses book-isbn apis for identification and maintains csv files for data storage. these files are committed to github. FOR PEOPLE WHO LIKE THE IDEA OF MAINTAINING A GITHUB REPO FOR THE BOOKS THEY READ.",
+    "main": "main.js",
+    "dependencies": {
+        "electron": "^2.0.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [
+        "gui",
+        "booktracker",
+        "booktracker-gui",
+        "electron",
+        "csv",
+        "booktracker-electron",
+        "js",
+        "html",
+        "css",
+        "materializecss"
+    ],
+    "author": "Parikshit Hooda",
+    "license": "MIT"
+}
