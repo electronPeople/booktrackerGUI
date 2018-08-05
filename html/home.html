@@ -43,7 +43,7 @@
                 <i class="material-icons" style="medium">delete</i>
             </div>
             <div class="fileContent">
-                <ul>
+                <ul id="readingUl">
                     <li></li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
 
     </div>
     <!--first div row ends-->
-
+    <script src="/js/papaparse.js" type="text/javascript" />
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.tooltipped');
@@ -76,7 +76,16 @@
             var instances = M.Tooltip.init(elems, options);
         });
     </script>
-    <script src="js/papa.js" type="text/javascript" />
+    <script type="text/javascript">
+        // Parse local CSV file
+        var config = {};
+        Papa.parse("../data/reading.csv", config);
+        //  {
+        //     complete: function(results, file) {
+        //         console.log("Parsing complete:", results, file);
+        //     }
+        // });
+    </script>
 
 </body>
 
