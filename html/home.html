@@ -79,12 +79,12 @@
     <script type="text/javascript">
         // Parse local CSV file
         var config = {};
-        Papa.parse("../data/reading.csv", config);
-        //  {
-        //     complete: function(results, file) {
-        //         console.log("Parsing complete:", results, file);
-        //     }
-        // });
+        Papa.parse("https://github.com/electronPeople/booktrackerGUI/blob/master/data/reading.csv", {
+            download: true,
+            complete: function(results, file) {
+                console.log("Parsing complete:", results, file);
+            }
+        });
     </script>
 
 </body>
