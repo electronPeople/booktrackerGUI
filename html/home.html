@@ -20,13 +20,13 @@
         <div class="col s12 m12 l12">
             <center>
                 <!--add new file category-->
-                <i class="medium material-icons">add</i>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Add new file"><i class="medium material-icons">add</a></i>
 
                 <!-- change password -->
-                <i class="medium material-icons">vpn_key</i>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Change Password"> <i class="medium material-icons">vpn_key</i></a>
 
                 <!--logout/login/register-->
-                <i class="medium material-icons">perm_identity</i>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Login/Register/Logout"> <i class="medium material-icons">perm_identity</i></a>
 
             </center>
         </div>
@@ -48,6 +48,17 @@
 
     </div>
     <!--first div row ends-->
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var options = {
+                exitDelay: 0
+            };
+            var instances = M.Tooltip.init(elems, options);
+        });
+    </script>
+
 </body>
 
 </html>
