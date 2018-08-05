@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .fileTitle {
+            font-size: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,29 +25,42 @@
         <div class="col s12 m12 l12">
             <center>
                 <!--add new file category-->
-                <a class="tooltipped" data-position="bottom" data-tooltip="Add new file"><i class="medium material-icons">add</a></i>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Add new file" style="color:black"><i class="medium material-icons">add</a></i>
 
                 <!-- change password -->
-                <a class="tooltipped" data-position="bottom" data-tooltip="Change Password"> <i class="medium material-icons">vpn_key</i></a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Change Password" style="color:black"> <i class="medium material-icons">vpn_key</i></a>
 
                 <!--logout/login/register-->
-                <a class="tooltipped" data-position="bottom" data-tooltip="Login/Register/Logout"> <i class="medium material-icons">perm_identity</i></a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Login/Register/Logout" style="color:black"> <i class="medium material-icons">perm_identity</i></a>
 
             </center>
         </div>
 
         <!-- reading files start  -->
         <div class="col s12 m6 l4">
-
+            <div class="topBar">
+                <span class="fileTitle">reading.csv</span>
+                <i class="material-icons" style="medium">delete</i>
+            </div>
+            <div class="fileContent">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- to read files start  -->
+        <!-- toread files start -->
         <div class="col s12 m6 l4">
-
+            <!-- <div class="topBar"> -->
+            <span class="fileTitle">toread.csv</span>
+            <i class="material-icons" style="medium">delete</i>
+            <!-- </div> -->
         </div>
-
-        <!--read files start-->
+        <!-- read tiles start -->
         <div class="col s12 m6 l4">
+            <!-- <div class="topBar"> -->
+            <span class="fileTitle">read.csv</span>
+            <i class="material-icons" style="medium">delete</i>
+            <!-- </div> -->
 
         </div>
 
